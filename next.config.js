@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/breakup-help' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/breakup-help/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/BreakUp' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/BreakUp/' : '',
 }
 
 module.exports = nextConfig
