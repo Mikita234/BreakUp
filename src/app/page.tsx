@@ -699,7 +699,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-gray-800 mb-2">Вероника</h3>
               <p className="text-sm text-gray-600 mb-3">Психолог, Консультант</p>
               <div className="space-y-2 text-left">
-                <p className="text-sm text-gray-700">• Закончила Белорусский государственный университет "кафедра общей психологии"</p>
+                <p className="text-sm text-gray-700">• Закончила Белорусский государственный университет &quot;кафедра общей психологии&quot;</p>
                 <p className="text-sm text-gray-700">• Обучалась по гранту академии экспоненциального коучинга Михаила Саидова</p>
                 <p className="text-sm text-gray-700">• Более 12 лет работа в группах с зависимостью и созависимостью</p>
                 <p className="text-sm text-gray-700">• Опыт 12-шаговых программ</p>
