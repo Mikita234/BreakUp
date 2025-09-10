@@ -553,9 +553,10 @@ export default function Home() {
         {/* NO OVERLAY - Photo is fully visible */}
         
         {/* Content with animation - appears after photo loads */}
-        <div className="relative max-w-7xl mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto animate-fade-in-up">
-            <div className="glass-card rounded-3xl p-8 md:p-12 warm-glow bg-white/95 backdrop-blur-sm animate-slide-in">
+        <div className="relative max-w-7xl mx-auto px-4">
+          {/* Top banner - above faces */}
+          <div className="text-center mb-16 animate-fade-in-up">
+            <div className="glass-card rounded-3xl p-8 md:p-12 warm-glow bg-white/95 backdrop-blur-sm animate-slide-in max-w-4xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-bold text-amber-600 mb-6">
                 💝 Мы создали этот проект, потому что сами прошли через боль
               </h2>
@@ -563,29 +564,6 @@ export default function Home() {
                 Каждая из нас знает, насколько разрушительным может быть опыт токсичных отношений. 
                 Мы понимаем, как не хватает поддержки и понимания в такие моменты.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div className="text-center animate-fade-in-delay-1">
-                  <div className="w-16 h-16 bg-rose-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">💔</span>
-                  </div>
-                  <h3 className="font-semibold text-gray-800 mb-2">Мы знаем боль</h3>
-                  <p className="text-sm text-gray-600">Прошли через токсичные отношения и понимаем ваши чувства</p>
-                </div>
-                <div className="text-center animate-fade-in-delay-2">
-                  <div className="w-16 h-16 bg-pink-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🤝</span>
-                  </div>
-                  <h3 className="font-semibold text-gray-800 mb-2">Мы знаем выход</h3>
-                  <p className="text-sm text-gray-600">Нашли путь к исцелению и готовы поделиться опытом</p>
-                </div>
-                <div className="text-center animate-fade-in-delay-3">
-                  <div className="w-16 h-16 bg-purple-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🌟</span>
-                  </div>
-                  <h3 className="font-semibold text-gray-800 mb-2">Мы знаем результат</h3>
-                  <p className="text-sm text-gray-600">Помогли уже многим девушкам обрести счастье</p>
-                </div>
-              </div>
               <div className="text-center animate-fade-in-delay-4">
                 <p className="text-lg text-amber-600 font-semibold mb-4">
                   Наша цель — помочь вам своими знаниями и опытом
@@ -598,6 +576,37 @@ export default function Home() {
                 >
                   ✈️ Начать путь к исцелению
                 </a>
+              </div>
+            </div>
+          </div>
+          
+          {/* Bottom section - features below faces */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in-up">
+            <div className="text-center animate-fade-in-delay-1">
+              <div className="glass-card rounded-2xl p-6 warm-glow bg-white/90 backdrop-blur-sm">
+                <div className="w-16 h-16 bg-rose-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">💔</span>
+                </div>
+                <h3 className="font-semibold text-gray-800 mb-2">Мы знаем боль</h3>
+                <p className="text-sm text-gray-600">Прошли через токсичные отношения и понимаем ваши чувства</p>
+              </div>
+            </div>
+            <div className="text-center animate-fade-in-delay-2">
+              <div className="glass-card rounded-2xl p-6 warm-glow bg-white/90 backdrop-blur-sm">
+                <div className="w-16 h-16 bg-pink-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🤝</span>
+                </div>
+                <h3 className="font-semibold text-gray-800 mb-2">Мы знаем выход</h3>
+                <p className="text-sm text-gray-600">Нашли путь к исцелению и готовы поделиться опытом</p>
+              </div>
+            </div>
+            <div className="text-center animate-fade-in-delay-3">
+              <div className="glass-card rounded-2xl p-6 warm-glow bg-white/90 backdrop-blur-sm">
+                <div className="w-16 h-16 bg-purple-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🌟</span>
+                </div>
+                <h3 className="font-semibold text-gray-800 mb-2">Мы знаем результат</h3>
+                <p className="text-sm text-gray-600">Помогли уже многим девушкам обрести счастье</p>
               </div>
             </div>
           </div>
@@ -761,65 +770,63 @@ export default function Home() {
         
         {/* Content with animation - appears after photo loads */}
         <div className="relative max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Image with faces visible */}
-            <div className="text-center lg:text-left animate-fade-in-up">
-              <div className="glass-card rounded-3xl p-8 warm-glow bg-white/95 backdrop-blur-sm animate-slide-in">
-                <h2 className="text-3xl md:text-4xl font-bold text-amber-600 mb-6">
-                  👥 Мы знаем, через что вы проходите
-                </h2>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Каждая из нас прошла через боль расставания и знает, как важно получить поддержку в такой момент.
-                </p>
-                <p className="text-base text-gray-600 mb-8">
-                  Мы объединились, чтобы помочь другим девушкам найти путь к исцелению.
-                </p>
-                <a
-                  href="https://t.me/+0ifj5RsF7KcxNDli"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-rose-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-rose-600 transition-all duration-300 shadow-2xl hover:shadow-rose-500/25"
-                >
-                  ✈️ Познакомиться с нами
-                </a>
+          {/* Top section - Banner above faces */}
+          <div className="text-center mb-16 animate-fade-in-up">
+            <div className="glass-card rounded-3xl p-8 warm-glow bg-white/95 backdrop-blur-sm animate-slide-in max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-amber-600 mb-6">
+                👥 Мы знаем, через что вы проходите
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Каждая из нас прошла через боль расставания и знает, как важно получить поддержку в такой момент.
+              </p>
+              <p className="text-base text-gray-600 mb-8">
+                Мы объединились, чтобы помочь другим девушкам найти путь к исцелению.
+              </p>
+              <a
+                href="https://t.me/+0ifj5RsF7KcxNDli"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-rose-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-rose-600 transition-all duration-300 shadow-2xl hover:shadow-rose-500/25"
+              >
+                ✈️ Познакомиться с нами
+              </a>
+            </div>
+          </div>
+          
+          {/* Bottom section - Team info below faces */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in-up">
+            <div className="glass-card rounded-2xl p-6 warm-glow bg-white/90 backdrop-blur-sm animate-slide-in-delay-1">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-rose-400 rounded-full flex items-center justify-center">
+                  <span className="text-xl">👩‍⚕️</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-800">Алеся Такун</h3>
+                  <p className="text-sm text-gray-600">Психолог, Гештальт-консультант</p>
+                </div>
               </div>
             </div>
             
-            {/* Right side - Team info */}
-            <div className="space-y-6 animate-fade-in-up">
-              <div className="glass-card rounded-2xl p-6 warm-glow bg-white/90 backdrop-blur-sm animate-slide-in-delay-1">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-rose-400 rounded-full flex items-center justify-center">
-                    <span className="text-xl">👩‍⚕️</span>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-800">Алеся Такун</h3>
-                    <p className="text-sm text-gray-600">Психолог, Гештальт-консультант</p>
-                  </div>
+            <div className="glass-card rounded-2xl p-6 warm-glow bg-white/90 backdrop-blur-sm animate-slide-in-delay-2">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-pink-400 rounded-full flex items-center justify-center">
+                  <span className="text-xl">💬</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-800">Лера</h3>
+                  <p className="text-sm text-gray-600">Консультант с 12-летним опытом</p>
                 </div>
               </div>
-              
-              <div className="glass-card rounded-2xl p-6 warm-glow bg-white/90 backdrop-blur-sm animate-slide-in-delay-2">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-pink-400 rounded-full flex items-center justify-center">
-                    <span className="text-xl">💬</span>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-800">Лера</h3>
-                    <p className="text-sm text-gray-600">Консультант с 12-летним опытом</p>
-                  </div>
+            </div>
+            
+            <div className="glass-card rounded-2xl p-6 warm-glow bg-white/90 backdrop-blur-sm animate-slide-in-delay-3">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
+                  <span className="text-xl">🧠</span>
                 </div>
-              </div>
-              
-              <div className="glass-card rounded-2xl p-6 warm-glow bg-white/90 backdrop-blur-sm animate-slide-in-delay-3">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
-                    <span className="text-xl">🧠</span>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-800">Вероника</h3>
-                    <p className="text-sm text-gray-600">Психолог, Консультант</p>
-                  </div>
+                <div>
+                  <h3 className="font-bold text-gray-800">Вероника</h3>
+                  <p className="text-sm text-gray-600">Психолог, Консультант</p>
                 </div>
               </div>
             </div>
