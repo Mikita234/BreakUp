@@ -102,55 +102,53 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section - New Design */}
-      <section className="relative h-screen flex flex-col overflow-hidden">
-        {/* Background cover image */}
-        <div className="absolute inset-0">
-          <OptimizedImage
-            webpSrc="./images/team/webp/cover-team-clean.webp"
-            jpgSrc="./images/team/optimized/cover-team-clean.jpg"
-            alt="Hope Club Team - Clean Faces"
-            className="w-full h-full object-cover object-center object-top md:object-center high-quality-image"
-            fallbackEmoji=""
-            fallbackBg="bg-amber-50"
-          />
-        </div>
+      {/* Hero Section - Professional Design */}
+      <section 
+        className="relative h-screen flex flex-col overflow-hidden"
+        style={{
+          backgroundImage: 'url("./images/team/optimized/cover-team.jpg")',
+          backgroundPosition: 'center bottom',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}
+        aria-label="Hero"
+      >
+        {/* SEO Hidden Heading */}
+        <h1 className="visually-hidden">HOPE CLUB</h1>
         
-        {/* Gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black/10"></div>
+        {/* Gradient overlay - only on top */}
+        <div 
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%)',
+            zIndex: 1
+          }}
+        ></div>
 
-        {/* Content using CSS Grid */}
-        <div className="relative flex-1 grid grid-rows-[25%_75%] md:grid-rows-[30%_70%] h-full">
-          {/* Upper zone - Text content (30% height) */}
-          <div className="flex items-center justify-center px-4">
+        {/* Content Grid - Two Zones */}
+        <div className="relative flex-1 grid grid-rows-[35%_65%] sm:grid-rows-[40%_60%] h-full" style={{ zIndex: 2 }}>
+          {/* Upper Zone - Text Content (35% mobile, 40% desktop) */}
+          <div className="flex items-start justify-center px-4 hero-content">
             <div className="text-center max-w-4xl">
-              {/* Main heading */}
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
-                <span className="block text-white drop-shadow-lg">
-                  HOPE CLUB
-                </span>
-              </h1>
-              
               {/* Subtitle */}
-              <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-6 drop-shadow-md">
+              <p className="text-lg md:text-xl lg:text-2xl text-white mb-6 drop-shadow-lg font-medium">
                 28-дневная программа исцеления после расставания
               </p>
               
               {/* CTA Button */}
               <a 
                 href="#program" 
-                className="inline-block bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="inline-block bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-rose-300 focus:ring-opacity-50"
+                aria-label="Узнать подробности о программе исцеления"
               >
                 Узнать о программе
               </a>
             </div>
           </div>
           
-          {/* Lower zone - Empty space to show faces (70% height) */}
+          {/* Lower Zone - Clean Photo (65% mobile, 60% desktop) */}
           <div className="relative">
-            {/* Optional: Subtle decorative elements that don't interfere with faces */}
-            <div className="absolute top-4 right-4 w-16 h-16 bg-white/10 rounded-full blur-xl"></div>
-            <div className="absolute bottom-4 left-4 w-12 h-12 bg-rose-400/20 rounded-full blur-lg"></div>
+            {/* This zone is intentionally empty to show faces clearly */}
           </div>
         </div>
 

@@ -7,6 +7,13 @@
   --secondary: #f97316;
   --rose: #f43f5e;
   --amber: #f59e0b;
+  --safe-top: 40vh;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --safe-top: 35vh;
+  }
 }
 
 body {
@@ -314,4 +321,36 @@ html {
   transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+}
+
+/* Visually hidden for SEO */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Hero section responsive adjustments */
+@media (max-width: 640px) {
+  .hero-content {
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .hero-content {
+    padding-top: 5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-content {
+    padding-top: 6rem;
+  }
 }
