@@ -111,7 +111,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 w-full h-full"
           style={{
-            backgroundImage: 'url("./images/team/high-quality/with_title.webp"), url("./images/team/high-quality/with_title.jpg")',
+            backgroundImage: 'url("./images/team/quality/with_title.webp"), url("./images/team/quality/with_title.jpg")',
             backgroundPosition: 'center bottom',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
