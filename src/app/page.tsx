@@ -104,9 +104,9 @@ export default function Home() {
 
       {/* Hero Section - Professional Design */}
       <section 
-        className="relative h-screen flex flex-col overflow-hidden"
+        className="relative h-screen flex flex-col overflow-hidden hero-bg"
         style={{
-          backgroundImage: 'url("./images/team/optimized/cover-team.jpg")',
+          backgroundImage: 'url("./images/team/Cover_TEAM_HopeClub.jpg")',
           backgroundPosition: 'center bottom',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
@@ -120,14 +120,14 @@ export default function Home() {
         <div 
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%)',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 25%)',
             zIndex: 1
           }}
         ></div>
 
         {/* Content Grid - Two Zones */}
-        <div className="relative flex-1 grid grid-rows-[35%_65%] sm:grid-rows-[40%_60%] h-full" style={{ zIndex: 2 }}>
-          {/* Upper Zone - Text Content (35% mobile, 40% desktop) */}
+        <div className="relative flex-1 grid grid-rows-[30%_70%] sm:grid-rows-[35%_65%] h-full" style={{ zIndex: 2 }}>
+          {/* Upper Zone - Text Content (30% mobile, 35% desktop) */}
           <div className="flex items-start justify-center px-4 hero-content">
             <div className="text-center max-w-4xl">
               {/* Subtitle */}
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Lower Zone - Clean Photo (65% mobile, 60% desktop) */}
+          {/* Lower Zone - Clean Photo (70% mobile, 65% desktop) */}
           <div className="relative">
             {/* This zone is intentionally empty to show faces clearly */}
           </div>
