@@ -107,8 +107,8 @@ export default function Home() {
         {/* Background cover image */}
         <div className="absolute inset-0">
           <OptimizedImage
-            webpSrc="/images/team/webp/cover-team.webp"
-            jpgSrc="/images/team/optimized/cover-team.jpg"
+            webpSrc="./images/team/webp/cover-team.webp"
+            jpgSrc="./images/team/optimized/cover-team.jpg"
             alt="Hope Club Team"
             className="w-full h-full object-cover opacity-40 high-quality-image"
             fallbackEmoji=""
@@ -237,7 +237,7 @@ export default function Home() {
               <div className="interactive-card glass-card rounded-2xl p-6 warm-glow text-center">
                 <div className="w-24 h-24 bg-rose-400 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
                   <img 
-                    src="/images/weeks/1_Week.png" 
+                    src="./images/weeks/1_Week.png" 
                     alt="Неделя 1" 
                     className="w-full h-full object-cover high-quality-image"
                     onError={(e) => {
@@ -258,7 +258,7 @@ export default function Home() {
               <div className="interactive-card glass-card rounded-2xl p-6 warm-glow text-center">
                 <div className="w-24 h-24 bg-pink-400 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
                   <img 
-                    src="/images/weeks/2_Week.png" 
+                    src="./images/weeks/2_Week.png" 
                     alt="Неделя 2" 
                     className="w-full h-full object-cover high-quality-image"
                     onError={(e) => {
@@ -279,7 +279,7 @@ export default function Home() {
               <div className="interactive-card glass-card rounded-2xl p-6 warm-glow text-center">
                 <div className="w-24 h-24 bg-purple-400 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
                   <img 
-                    src="/images/weeks/3_Week.png" 
+                    src="./images/weeks/3_Week.png" 
                     alt="Неделя 3" 
                     className="w-full h-full object-cover high-quality-image"
                     onError={(e) => {
@@ -300,7 +300,7 @@ export default function Home() {
               <div className="interactive-card glass-card rounded-2xl p-6 warm-glow text-center">
                 <div className="w-24 h-24 bg-indigo-400 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
                   <img 
-                    src="/images/weeks/4_Week.png" 
+                    src="./images/weeks/4_Week.png" 
                     alt="Неделя 4" 
                     className="w-full h-full object-cover high-quality-image"
                     onError={(e) => {
@@ -327,7 +327,7 @@ export default function Home() {
         {/* Background cover image */}
         <div className="absolute inset-0 opacity-35">
           <img
-            src="/images/team/webp/cover-final.webp"
+            src="./images/team/webp/cover-final.webp"
             alt="Hope Club Benefits Background"
             className="w-full h-full object-cover high-quality-image"
             onError={(e) => {
@@ -541,8 +541,8 @@ export default function Home() {
         {/* Full cover image as main design element */}
         <div className="absolute inset-0">
           <OptimizedImage
-            webpSrc="/images/team/webp/cover-team.webp"
-            jpgSrc="/images/team/optimized/cover-team.jpg"
+            webpSrc="./images/team/webp/cover-team.webp"
+            jpgSrc="./images/team/optimized/cover-team.jpg"
             alt="Hope Club Team"
             className="w-full h-full object-cover high-quality-image"
             fallbackEmoji=""
@@ -618,7 +618,7 @@ export default function Home() {
         {/* Background cover image - clean version without text */}
         <div className="absolute inset-0 opacity-35">
           <img
-            src="/images/team/webp/cover-team-clean.webp"
+            src="./images/team/webp/cover-team-clean.webp"
             alt="Hope Club Team Background"
             className="w-full h-full object-cover high-quality-image"
             onError={(e) => {
@@ -646,8 +646,8 @@ export default function Home() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4">
                 <OptimizedImage
-                  webpSrc="/images/team/webp/alesya.webp"
-                  jpgSrc="/images/team/optimized/alesya.jpg"
+                  webpSrc="./images/team/webp/alesya.webp"
+                  jpgSrc="./images/team/optimized/alesya.jpg"
                   alt="Алеся Такун - Психолог, Гештальт-консультант"
                   className="w-full h-full rounded-full object-cover border-4 border-rose-200 shadow-lg"
                   fallbackEmoji="👩‍⚕️"
@@ -667,8 +667,8 @@ export default function Home() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4">
                 <OptimizedImage
-                  webpSrc="/images/team/webp/lera.webp"
-                  jpgSrc="/images/team/optimized/lera.jpg"
+                  webpSrc="./images/team/webp/lera.webp"
+                  jpgSrc="./images/team/optimized/lera.jpg"
                   alt="Лера - Консультант"
                   className="w-full h-full rounded-full object-cover border-4 border-pink-200 shadow-lg"
                   fallbackEmoji="💬"
@@ -688,8 +688,8 @@ export default function Home() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4">
                 <OptimizedImage
-                  webpSrc="/images/team/webp/veronika.webp"
-                  jpgSrc="/images/team/optimized/veronika.jpg"
+                  webpSrc="./images/team/webp/veronika.webp"
+                  jpgSrc="./images/team/optimized/veronika.jpg"
                   alt="Вероника - Психолог, Консультант"
                   className="w-full h-full rounded-full object-cover border-4 border-purple-200 shadow-lg"
                   fallbackEmoji="🧠"
@@ -757,8 +757,8 @@ export default function Home() {
         {/* Full cover image as main design element - clean version without text */}
         <div className="absolute inset-0">
           <OptimizedImage
-            webpSrc="/images/team/webp/cover-team-clean.webp"
-            jpgSrc="/images/team/optimized/cover-team-clean.jpg"
+            webpSrc="./images/team/webp/cover-team-clean.webp"
+            jpgSrc="./images/team/optimized/cover-team-clean.jpg"
             alt="Hope Club Team - Clean Faces Visible"
             className="w-full h-full object-cover high-quality-image"
             fallbackEmoji=""
@@ -839,7 +839,7 @@ export default function Home() {
         {/* Background cover image */}
         <div className="absolute inset-0 opacity-35">
           <img
-            src="/images/team/webp/cover-final.webp"
+            src="./images/team/webp/cover-final.webp"
             alt="Hope Club Benefits Background"
             className="w-full h-full object-cover high-quality-image"
             onError={(e) => {
@@ -1006,8 +1006,8 @@ export default function Home() {
         {/* Full cover image as main design element */}
         <div className="absolute inset-0">
           <OptimizedImage
-            webpSrc="/images/team/webp/cover-final.webp"
-            jpgSrc="/images/team/optimized/cover-final.jpg"
+            webpSrc="./images/team/webp/cover-final.webp"
+            jpgSrc="./images/team/optimized/cover-final.jpg"
             alt="Hope Club Final"
             className="w-full h-full object-cover high-quality-image"
             fallbackEmoji=""
@@ -1186,7 +1186,7 @@ export default function Home() {
         {/* Background cover image */}
         <div className="absolute inset-0 opacity-35">
           <img
-            src="/images/team/webp/cover-team-clean.webp"
+            src="./images/team/webp/cover-team-clean.webp"
             alt="Hope Club Contact Background"
             className="w-full h-full object-cover high-quality-image"
             onError={(e) => {
