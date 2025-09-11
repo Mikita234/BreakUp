@@ -112,7 +112,7 @@ export default function Home() {
           className="absolute inset-0 w-full h-full"
           style={{
             backgroundImage: 'url("./images/team/normal/with_title.webp"), url("./images/team/normal/with_title.jpg")',
-            backgroundPosition: 'center bottom',
+            backgroundPosition: 'center center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
           }}
@@ -124,7 +124,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 25%)',
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 20%)',
             zIndex: 1
           }}
         ></div>
@@ -267,7 +267,7 @@ export default function Home() {
                   <img 
                     src="./images/weeks/1_Week.png" 
                     alt="Неделя 1" 
-                    className="w-full h-full object-cover high-quality-image"
+                    className="w-full h-full object-cover object-center high-quality-image"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                       const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
@@ -288,7 +288,7 @@ export default function Home() {
                   <img 
                     src="./images/weeks/2_Week.png" 
                     alt="Неделя 2" 
-                    className="w-full h-full object-cover high-quality-image"
+                    className="w-full h-full object-cover object-center high-quality-image"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                       const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
@@ -309,7 +309,7 @@ export default function Home() {
                   <img 
                     src="./images/weeks/3_Week.png" 
                     alt="Неделя 3" 
-                    className="w-full h-full object-cover high-quality-image"
+                    className="w-full h-full object-cover object-center high-quality-image"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                       const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
@@ -330,7 +330,7 @@ export default function Home() {
                   <img 
                     src="./images/weeks/4_Week.png" 
                     alt="Неделя 4" 
-                    className="w-full h-full object-cover high-quality-image"
+                    className="w-full h-full object-cover object-center high-quality-image"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                       const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
@@ -357,7 +357,7 @@ export default function Home() {
           <img
             src="./images/team/normal/without_text.webp"
             alt="Hope Club Benefits Background"
-            className="w-full h-full object-cover high-quality-image"
+            className="w-full h-full object-cover object-center high-quality-image"
             onError={(e) => {
               e.currentTarget.src = "./images/team/normal/without_text.jpg";
             }}
@@ -569,10 +569,10 @@ export default function Home() {
         {/* Full cover image as main design element */}
         <div className="absolute inset-0">
           <OptimizedImage
-            webpSrc="./images/team/normal/with_title.webp"
-            jpgSrc="./images/team/normal/with_title.jpg"
+            webpSrc="./images/team/normal/without_text.webp"
+            jpgSrc="./images/team/normal/without_text.jpg"
             alt="Hope Club Team"
-            className="w-full h-full object-cover high-quality-image"
+            className="w-full h-full object-cover object-center high-quality-image"
             fallbackEmoji=""
             fallbackBg="bg-amber-50"
           />
@@ -648,7 +648,7 @@ export default function Home() {
           <img
             src="./images/team/normal/without_text.webp"
             alt="Hope Club Team Background"
-            className="w-full h-full object-cover high-quality-image"
+            className="w-full h-full object-cover object-center high-quality-image"
             onError={(e) => {
               e.currentTarget.src = "./images/team/normal/without_text.jpg";
             }}
@@ -788,7 +788,7 @@ export default function Home() {
             webpSrc="./images/team/normal/without_text.webp"
             jpgSrc="./images/team/normal/without_text.jpg"
             alt="Hope Club Team - Clean Faces Visible"
-            className="w-full h-full object-cover high-quality-image"
+            className="w-full h-full object-cover object-center high-quality-image"
             fallbackEmoji=""
             fallbackBg="bg-amber-50"
           />
@@ -869,7 +869,7 @@ export default function Home() {
           <img
             src="./images/team/normal/cover-final.webp"
             alt="Hope Club Benefits Background"
-            className="w-full h-full object-cover high-quality-image"
+            className="w-full h-full object-cover object-center high-quality-image"
             onError={(e) => {
               e.currentTarget.src = "./images/team/normal/cover-final.jpg";
             }}
@@ -1037,7 +1037,7 @@ export default function Home() {
             webpSrc="./images/team/normal/cover-final.webp"
             jpgSrc="./images/team/normal/cover-final.jpg"
             alt="Hope Club Final"
-            className="w-full h-full object-cover high-quality-image"
+            className="w-full h-full object-cover object-center high-quality-image"
             fallbackEmoji=""
             fallbackBg="bg-amber-50"
           />
@@ -1216,7 +1216,7 @@ export default function Home() {
           <img
             src="./images/team/normal/without_text.webp"
             alt="Hope Club Contact Background"
-            className="w-full h-full object-cover high-quality-image"
+            className="w-full h-full object-cover object-center high-quality-image"
             onError={(e) => {
               e.currentTarget.src = "./images/team/normal/without_text.jpg";
             }}
