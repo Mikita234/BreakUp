@@ -111,7 +111,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 w-full h-full"
           style={{
-            backgroundImage: 'url("./images/team/quality/with_title.webp"), url("./images/team/quality/with_title.jpg")',
+            backgroundImage: 'url("./images/team/normal/with_title.webp"), url("./images/team/normal/with_title.jpg")',
             backgroundPosition: 'center bottom',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
@@ -165,7 +165,7 @@ export default function Home() {
               <span className="block text-gray-800">
                 после расставания
               </span>
-              <span className="block text-rose-600">
+              <span className="block text-amber-600">
                 28-дневная программа исцеления
               </span>
             </h1>
@@ -196,7 +196,7 @@ export default function Home() {
                   <span className="text-amber-600 font-semibold">Дорогая, ты не одна в этом.</span> Мы все проходили через это. Через ночи без сна, через слезы, через попытки понять, что же пошло не так.
                   И мы нашли выход — через осознание, через работу с собой, через поддержку.
                   <br /><br />
-                  <span className="text-rose-600 font-medium">28-дневная программа реабилитации</span>
+                  <span className="text-amber-600 font-medium">28-дневная программа реабилитации</span>
                   <br />
                   <span className="text-base text-gray-600 italic">Поможет тебе пройти путь от боли к счастью, от зависимости к свободе</span>
                 </p>
@@ -355,11 +355,11 @@ export default function Home() {
         {/* Background cover image */}
         <div className="absolute inset-0 opacity-35">
           <img
-            src="./images/team/webp/cover-final.webp"
+            src="./images/team/normal/without_text.webp"
             alt="Hope Club Benefits Background"
             className="w-full h-full object-cover high-quality-image"
             onError={(e) => {
-              e.currentTarget.src = "/images/team/optimized/cover-final.jpg";
+              e.currentTarget.src = "./images/team/normal/without_text.jpg";
             }}
           />
         </div>
@@ -569,8 +569,8 @@ export default function Home() {
         {/* Full cover image as main design element */}
         <div className="absolute inset-0">
           <OptimizedImage
-            webpSrc="./images/team/webp/cover-team.webp"
-            jpgSrc="./images/team/optimized/cover-team.jpg"
+            webpSrc="./images/team/normal/with_title.webp"
+            jpgSrc="./images/team/normal/with_title.jpg"
             alt="Hope Club Team"
             className="w-full h-full object-cover high-quality-image"
             fallbackEmoji=""
@@ -646,11 +646,11 @@ export default function Home() {
         {/* Background cover image - clean version without text */}
         <div className="absolute inset-0 opacity-35">
           <img
-            src="./images/team/webp/cover-team-clean.webp"
+            src="./images/team/normal/without_text.webp"
             alt="Hope Club Team Background"
             className="w-full h-full object-cover high-quality-image"
             onError={(e) => {
-              e.currentTarget.src = "/images/team/optimized/cover-team-clean.jpg";
+              e.currentTarget.src = "./images/team/normal/without_text.jpg";
             }}
           />
         </div>
@@ -674,8 +674,8 @@ export default function Home() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4">
                 <OptimizedImage
-                  webpSrc="./images/team/webp/alesya.webp"
-                  jpgSrc="./images/team/optimized/alesya.jpg"
+                  webpSrc="./images/team/normal/alesya.webp"
+                  jpgSrc="./images/team/normal/alesya.jpg"
                   alt="Алеся Такун - Психолог, Гештальт-консультант"
                   className="w-full h-full rounded-full object-cover border-4 border-rose-200 shadow-lg"
                   fallbackEmoji="👩‍⚕️"
@@ -695,8 +695,8 @@ export default function Home() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4">
                 <OptimizedImage
-                  webpSrc="./images/team/webp/lera.webp"
-                  jpgSrc="./images/team/optimized/lera.jpg"
+                  webpSrc="./images/team/normal/lera.webp"
+                  jpgSrc="./images/team/normal/lera.jpg"
                   alt="Лера - Консультант"
                   className="w-full h-full rounded-full object-cover border-4 border-pink-200 shadow-lg"
                   fallbackEmoji="💬"
@@ -716,8 +716,8 @@ export default function Home() {
             <div className="text-center">
               <div className="w-32 h-32 mx-auto mb-4">
                 <OptimizedImage
-                  webpSrc="./images/team/webp/veronika.webp"
-                  jpgSrc="./images/team/optimized/veronika.jpg"
+                  webpSrc="./images/team/normal/veronika.webp"
+                  jpgSrc="./images/team/normal/veronika.jpg"
                   alt="Вероника - Психолог, Консультант"
                   className="w-full h-full rounded-full object-cover border-4 border-purple-200 shadow-lg"
                   fallbackEmoji="🧠"
@@ -785,8 +785,8 @@ export default function Home() {
         {/* Full cover image as main design element - clean version without text */}
         <div className="absolute inset-0">
           <OptimizedImage
-            webpSrc="./images/team/webp/cover-team-clean.webp"
-            jpgSrc="./images/team/optimized/cover-team-clean.jpg"
+            webpSrc="./images/team/normal/without_text.webp"
+            jpgSrc="./images/team/normal/without_text.jpg"
             alt="Hope Club Team - Clean Faces Visible"
             className="w-full h-full object-cover high-quality-image"
             fallbackEmoji=""
@@ -867,11 +867,11 @@ export default function Home() {
         {/* Background cover image */}
         <div className="absolute inset-0 opacity-35">
           <img
-            src="./images/team/webp/cover-final.webp"
+            src="./images/team/normal/cover-final.webp"
             alt="Hope Club Benefits Background"
             className="w-full h-full object-cover high-quality-image"
             onError={(e) => {
-              e.currentTarget.src = "/images/team/optimized/cover-final.jpg";
+              e.currentTarget.src = "./images/team/normal/cover-final.jpg";
             }}
           />
         </div>
@@ -1034,8 +1034,8 @@ export default function Home() {
         {/* Full cover image as main design element */}
         <div className="absolute inset-0">
           <OptimizedImage
-            webpSrc="./images/team/webp/cover-final.webp"
-            jpgSrc="./images/team/optimized/cover-final.jpg"
+            webpSrc="./images/team/normal/cover-final.webp"
+            jpgSrc="./images/team/normal/cover-final.jpg"
             alt="Hope Club Final"
             className="w-full h-full object-cover high-quality-image"
             fallbackEmoji=""
@@ -1214,11 +1214,11 @@ export default function Home() {
         {/* Background cover image */}
         <div className="absolute inset-0 opacity-35">
           <img
-            src="./images/team/webp/cover-team-clean.webp"
+            src="./images/team/normal/without_text.webp"
             alt="Hope Club Contact Background"
             className="w-full h-full object-cover high-quality-image"
             onError={(e) => {
-              e.currentTarget.src = "/images/team/optimized/cover-team-clean.jpg";
+              e.currentTarget.src = "./images/team/normal/without_text.jpg";
             }}
           />
         </div>
