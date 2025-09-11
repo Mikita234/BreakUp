@@ -129,30 +129,22 @@ export default function Home() {
           }}
         ></div>
 
-        {/* Content Grid - Two Zones */}
-        <div className="relative flex-1 grid grid-rows-[30%_70%] sm:grid-rows-[35%_65%] h-full" style={{ zIndex: 2 }}>
-          {/* Upper Zone - Text Content (30% mobile, 35% desktop) */}
-          <div className="flex items-start justify-center px-4 hero-content">
-            <div className="text-center max-w-4xl">
-              {/* Subtitle */}
-              <p className="text-lg md:text-xl lg:text-2xl text-white mb-6 drop-shadow-lg font-medium">
-                28-дневная программа исцеления после расставания
-              </p>
-              
-              {/* CTA Button */}
-              <a 
-                href="#program" 
-                className="inline-block bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-rose-300 focus:ring-opacity-50"
-                aria-label="Узнать подробности о программе исцеления"
-              >
-                Узнать о программе
-              </a>
-            </div>
-          </div>
-          
-          {/* Lower Zone - Clean Photo (70% mobile, 65% desktop) */}
-          <div className="relative">
-            {/* This zone is intentionally empty to show faces clearly */}
+        {/* Content - Text positioned to not overlap with HOPE CLUB text */}
+        <div className="relative flex-1 flex items-center justify-center px-4" style={{ zIndex: 2 }}>
+          <div className="text-center max-w-4xl">
+            {/* Subtitle - positioned below HOPE CLUB text */}
+            <p className="text-lg md:text-xl lg:text-2xl text-white mb-6 drop-shadow-lg font-medium">
+              28-дневная программа исцеления после расставания
+            </p>
+            
+            {/* CTA Button */}
+            <a 
+              href="#program" 
+              className="inline-block bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-rose-300 focus:ring-opacity-50"
+              aria-label="Узнать подробности о программе исцеления"
+            >
+              Узнать о программе
+            </a>
           </div>
         </div>
 
@@ -867,11 +859,11 @@ export default function Home() {
         {/* Background cover image */}
         <div className="absolute inset-0 opacity-35">
           <img
-            src="./images/team/normal/cover-final.webp"
-            alt="Hope Club Benefits Background"
+            src="./images/team/normal/heart.webp"
+            alt="Hope Club Program Background"
             className="w-full h-full object-cover object-center high-quality-image"
             onError={(e) => {
-              e.currentTarget.src = "./images/team/normal/cover-final.jpg";
+              e.currentTarget.src = "./images/team/normal/heart.jpg";
             }}
           />
         </div>
@@ -1034,8 +1026,8 @@ export default function Home() {
         {/* Full cover image as main design element */}
         <div className="absolute inset-0">
           <OptimizedImage
-            webpSrc="./images/team/normal/cover-final.webp"
-            jpgSrc="./images/team/normal/cover-final.jpg"
+            webpSrc="./images/team/normal/heart.webp"
+            jpgSrc="./images/team/normal/heart.jpg"
             alt="Hope Club Final"
             className="w-full h-full object-cover object-center high-quality-image"
             fallbackEmoji=""
