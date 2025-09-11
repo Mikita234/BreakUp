@@ -105,14 +105,18 @@ export default function Home() {
       {/* Hero Section - Professional Design */}
       <section 
         className="relative h-screen flex flex-col overflow-hidden hero-bg"
-        style={{
-          backgroundImage: 'url("./images/team/Cover_TEAM_HopeClub.jpg")',
-          backgroundPosition: 'center bottom',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'
-        }}
         aria-label="Hero"
       >
+        {/* High-quality background image with WebP support */}
+        <div 
+          className="absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: 'url("./images/team/high-quality/with_title.webp"), url("./images/team/high-quality/with_title.jpg")',
+            backgroundPosition: 'center bottom',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'
+          }}
+        ></div>
         {/* SEO Hidden Heading */}
         <h1 className="visually-hidden">HOPE CLUB</h1>
         
