@@ -102,31 +102,57 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      {/* Hero Section - New Design */}
+      <section className="relative h-screen flex flex-col overflow-hidden">
         {/* Background cover image */}
         <div className="absolute inset-0">
           <OptimizedImage
             webpSrc="./images/team/webp/cover-team.webp"
             jpgSrc="./images/team/optimized/cover-team.jpg"
             alt="Hope Club Team"
-            className="w-full h-full object-cover opacity-40 high-quality-image"
+            className="w-full h-full object-cover object-center high-quality-image"
             fallbackEmoji=""
             fallbackBg="bg-amber-50"
           />
         </div>
         
-        {/* Background decorative elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-64 h-64 bg-yellow-200/30 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-pink-200/30 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-200/20 rounded-full blur-2xl"></div>
-        </div>
+        {/* Gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent"></div>
 
-        {/* Floating shapes */}
-        <div className="floating-shape w-8 h-8 top-40 left-32"></div>
-        <div className="floating-shape w-6 h-6 top-60 right-40" style={{ animationDelay: '1s' }}></div>
-        <div className="floating-shape w-10 h-10 bottom-40 left-40" style={{ animationDelay: '2s' }}></div>
+        {/* Content using CSS Grid */}
+        <div className="relative flex-1 grid grid-rows-[35%_65%] h-full">
+          {/* Upper zone - Text content (35% height) */}
+          <div className="flex items-center justify-center px-4">
+            <div className="text-center max-w-4xl">
+              {/* Main heading */}
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+                <span className="block text-white drop-shadow-lg">
+                  HOPE CLUB
+                </span>
+              </h1>
+              
+              {/* Subtitle */}
+              <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-6 drop-shadow-md">
+                28-дневная программа исцеления после расставания
+              </p>
+              
+              {/* CTA Button */}
+              <a 
+                href="#program" 
+                className="inline-block bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                Узнать о программе
+              </a>
+            </div>
+          </div>
+          
+          {/* Lower zone - Empty space to show faces (65% height) */}
+          <div className="relative">
+            {/* Optional: Subtle decorative elements that don't interfere with faces */}
+            <div className="absolute top-4 right-4 w-16 h-16 bg-white/10 rounded-full blur-xl"></div>
+            <div className="absolute bottom-4 left-4 w-12 h-12 bg-rose-400/20 rounded-full blur-lg"></div>
+          </div>
+        </div>
 
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <div className="mb-8">
