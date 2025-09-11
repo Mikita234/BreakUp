@@ -107,21 +107,21 @@ export default function Home() {
         {/* Background cover image */}
         <div className="absolute inset-0">
           <OptimizedImage
-            webpSrc="./images/team/webp/cover-team.webp"
-            jpgSrc="./images/team/optimized/cover-team.jpg"
-            alt="Hope Club Team"
-            className="w-full h-full object-cover object-center high-quality-image"
+            webpSrc="./images/team/webp/cover-team-clean.webp"
+            jpgSrc="./images/team/optimized/cover-team-clean.jpg"
+            alt="Hope Club Team - Clean Faces"
+            className="w-full h-full object-cover object-center object-top md:object-center high-quality-image"
             fallbackEmoji=""
             fallbackBg="bg-amber-50"
           />
         </div>
         
         {/* Gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black/10"></div>
 
         {/* Content using CSS Grid */}
-        <div className="relative flex-1 grid grid-rows-[35%_65%] h-full">
-          {/* Upper zone - Text content (35% height) */}
+        <div className="relative flex-1 grid grid-rows-[25%_75%] md:grid-rows-[30%_70%] h-full">
+          {/* Upper zone - Text content (30% height) */}
           <div className="flex items-center justify-center px-4">
             <div className="text-center max-w-4xl">
               {/* Main heading */}
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Lower zone - Empty space to show faces (65% height) */}
+          {/* Lower zone - Empty space to show faces (70% height) */}
           <div className="relative">
             {/* Optional: Subtle decorative elements that don't interfere with faces */}
             <div className="absolute top-4 right-4 w-16 h-16 bg-white/10 rounded-full blur-xl"></div>
